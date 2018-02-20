@@ -31,38 +31,7 @@
         <body>
 
           <!-- Top menu -->
-          <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container">
-              <a class="navbar-brand" href="index.html">HOME</a>
-              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCleaningServices" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Cleaning Services
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownCleaningServices">
-                      <a class="dropdown-item" href="portfolio-1-col.html">Home Cleaning</a>
-                      <a class="dropdown-item" href="portfolio-2-col.html">Deep Cleaning</a>
-                      <a class="dropdown-item" href="portfolio-3-col.html">Office Cleaning</a>
-                      <a class="dropdown-item" href="portfolio-4-col.html">Pool Cleaning</a>
-                    </div>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="faq.html">FAQ</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+          <div w3-include-html="template.html"></div> 
 
           <!-- Top content -->
           <div class="top-content">
@@ -240,11 +209,14 @@
   <script src="assets/js/scripts.js"></script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+  <script src="https://www.w3schools.com/lib/w3.js"></script> 
   <script src="js/jquery.datetimepicker.full.js"></script>
   <script>
     $("#datetimepicker").datetimepicker();
   </script>
+  <script>
+    w3.includeHTML();
+  </script> 
 
         <!--[if lt IE 10]>
             <script src="assets/js/placeholder.js"></script>
